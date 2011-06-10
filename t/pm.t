@@ -1,4 +1,4 @@
-use t::TestModuleCompile tests => 1;
+use t::TestModuleCompile skip_all => 'In progress...';  # tests => 1;
 
 BEGIN { $ENV{PERL5OPT} = '-MModule::Compile=-ext,p,pm' };
 

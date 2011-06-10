@@ -1,4 +1,12 @@
 ---
+version: 0.21
+date:    Fri Jun 10 22:04:26 EST 2011
+changes:
+- Make modern
+- Switch to Module::Package
+- Use Stardoc
+- Move out of Kwiki repo
+---
 version: 0.20
 date:    Tue Oct 17 02:16:18 PDT 2006
 changes:

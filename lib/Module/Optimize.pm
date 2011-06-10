@@ -1,6 +1,13 @@
-package Module::Optimize;
+##
+# name:      Module::Optimize
+# abstract:  Perl Module Optimization
+# author:
+# - Audrey Tang <autrijus@autrijus.org>
+# - Ingy döt Net <ingy@ingy.net>
+# license:   perl
+# copyright: 2006, 2011
 
-use 5.006;
+package Module::Optimize;
 use strict;
 use warnings;
 use Module::Compile -base;
@@ -15,12 +22,6 @@ sub pmc_optimize {
 }
 
 1;
-
-__END__
-
-=head1 NAME
-
-Module::Compile - Perl Module Optimization
 
 =head1 SYNOPSIS
 
@@ -69,20 +70,3 @@ You get the following benefits:
 =head1 SEE ALSO
 
 Module::Compile
-
-=head1 AUTHORS
-
-Audrey Tang <autrijus@autrijus.org>
-
-Ingy döt Net <ingy@cpan.org>
-
-=head1 COPYRIGHT
-
-Copyright (c) 2006. Ingy döt Net. All rights reserved.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
-See L<http://www.perl.com/perl/misc/Artistic.html>
-
-=cut

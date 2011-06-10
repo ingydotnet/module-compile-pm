@@ -1,15 +1,25 @@
+##
+# name:      Module::Compile
+# abstract:  Perl Module Compilation
+# author:
+# - Ingy döt Net <ingy@ingy.net>
+# - Audrey Tang <autrijus@autrijus.org>
+# license:   perl
+# copyright: 2006, 2011
+
 # To Do:
 #
 # - Make preface part of parsed code, since it might contain `package`
 #   statements or other scoping stuff.
 # - Build code into an AST.
 package Module::Compile;
-
-use 5.006;
+use 5.008003;
 use strict;
 use warnings;
 
-our $VERSION = '0.20';
+our $VERSION = '0.21';
+
+use Digest::SHA1 2.13 ();
 
 # A lexical hash to keep track of which files have already been filtered
 my $filtered = {};
@@ -570,12 +580,6 @@ sub pmc_unfold {
 
 1;
 
-__END__
-
-=head1 NAME
-
-Module::Compile - Perl Module Compilation
-
 =head1 SYNOPSIS
 
     package Foo;
@@ -776,20 +780,3 @@ prerequisites.
 =head1 SEE ALSO
 
 Module::Install
-
-=head1 AUTHORS
-
-Ingy döt Net <ingy@cpan.org>
-
-Audrey Tang <autrijus@autrijus.org>
-
-=head1 COPYRIGHT
-
-Copyright (c) 2006. Ingy döt Net. All rights reserved.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
-See L<http://www.perl.com/perl/misc/Artistic.html>
-
-=cut
