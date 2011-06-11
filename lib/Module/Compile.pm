@@ -12,12 +12,12 @@
 # - Make preface part of parsed code, since it might contain `package`
 #   statements or other scoping stuff.
 # - Build code into an AST.
-package Module::Compile;
 use 5.008003;
+package Module::Compile;
 use strict;
 use warnings;
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 use Digest::SHA1 2.13 ();
 
