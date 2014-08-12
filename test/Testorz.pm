@@ -1,4 +1,4 @@
-package t::Testorz;
+package Testorz;
 use strict;
 use warnings;
 
@@ -10,7 +10,7 @@ sub pmc_compile {
 # orz...\n
 $_
 pass 'orz was here';
-pass __FILE__; 
+pass __FILE__;
 _
 }
 

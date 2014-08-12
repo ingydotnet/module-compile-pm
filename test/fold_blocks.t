@@ -1,4 +1,5 @@
-use t::TestModuleCompile tests => 9;
+use lib -e 't' ? 't' : 'test';
+use TestModuleCompile tests => 9;
 
 filters({ perl => 'process' });
 

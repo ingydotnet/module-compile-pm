@@ -1,0 +1,29 @@
+=meta: 0.0.1
+
+name: Module-Compile
+version: 0.24
+abstract: Perl Module Compilation
+homepage: https://metacpan.org/release/Module-Compile
+
+license: perl
+copyright: 2006-2014. Ingy döt Net
+author:
+  name: Ingy döt Net
+  email: ingy@cpan.org
+  github: ingydotnet
+  twitter: ingydotnet
+  freenode: ingy
+  homepage: http://ingy.net
+
+requires:
+  perl: 5.8.1
+  Digest::SHA1: 2.13
+
+devel:
+  git: https://github.com/ingydotnet/module-compile-pm
+  bug: https://github.com/ingydotnet/module-compile-pm/issues
+  irc: irc.perl.org#pkg
+
+=travis:
+  type: perl
+  irc: irc.perl.org#pkg

@@ -1,4 +1,5 @@
-use t::TestModuleCompile tests => 1;
+use lib -e 't' ? 't' : 'test';
+use TestModuleCompile tests => 1;
 
 no_diff;
 filters {

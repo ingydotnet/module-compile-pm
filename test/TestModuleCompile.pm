@@ -1,11 +1,11 @@
-package t::TestModuleCompile;
+package TestModuleCompile;
 use Test::Base -Base;
 
-use lib 't/lib';
+use lib -e 't' ? 't/lib' : 'test/lib';
 
 use Module::Compile();
 
-package t::TestModuleCompile::Filter;
+package TestModuleCompile::Filter;
 use base 'Test::Base::Filter';
 
 sub process_pm {
