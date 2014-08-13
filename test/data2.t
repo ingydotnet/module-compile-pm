@@ -1,4 +1,4 @@
-my $t; use lib $t = -e 't' ? 't' : 'test';
+my $t; use lib ($t = -e 't' ? 't' : 'test'), 'inc';
 use TestModuleCompile tests => 3;
 
 my $pmc;

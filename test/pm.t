@@ -1,4 +1,4 @@
-my $t; use lib $t = -e 't' ? 't' : 'test';
+my $t; use lib ($t = -e 't' ? 't' : 'test'), 'inc';
 use TestModuleCompile skip_all => 'In progress...';  # tests => 1;
 
 BEGIN { $ENV{PERL5OPT} = '-MModule::Compile=-ext,p,pm' };

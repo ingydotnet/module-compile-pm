@@ -1,7 +1,7 @@
 =meta: 0.0.1
 
 name: Module-Compile
-version: 0.25
+version: 0.26
 abstract: Perl Module Compilation
 homepage: https://metacpan.org/release/Module-Compile
 
@@ -24,6 +24,13 @@ devel:
   bug: https://github.com/ingydotnet/module-compile-pm/issues
   irc: irc.perl.org#pkg
 
+=cpan:
+  include_testbase: true
+
 =travis:
   type: perl
   irc: irc.perl.org#pkg
+  testbase: true
+  test:
+    requires:
+      Spiffy: 0

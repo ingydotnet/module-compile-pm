@@ -1,7 +1,7 @@
 # BEGIN { unlink 't/orz.tc' }
 
 # Need to invoke Module::Compile before Test::More
-my $t; use lib $t = -e 't' ? 't' : 'test';
+my $t; use lib ($t = -e 't' ? 't' : 'test'), 'inc';
 use Module::Compile;
 
 use Test::More tests => 5;

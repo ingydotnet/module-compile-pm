@@ -1,4 +1,4 @@
-use lib -e 't' ? 't' : 'test';
+use lib (-e 't' ? 't' : 'test'), 'inc';
 use TestModuleCompile tests => 9;
 
 filters({ perl => 'process' });

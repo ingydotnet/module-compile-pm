@@ -1,4 +1,9 @@
 ---
+version: 0.26
+date:    Wed Aug 13 12:13:45 PDT 2014
+changes:
+-  Fix tests to use `inc` for Test::Base
+---
 version: 0.25
 date:    Wed Aug 13 11:23:45 PDT 2014
 changes:
