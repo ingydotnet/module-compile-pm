@@ -5,7 +5,7 @@
 # - Build code into an AST.
 use strict; use warnings;
 package Module::Compile;
-our $VERSION = '0.24';
+our $VERSION = '0.25';
 
 use Digest::SHA1();
 
