@@ -1,10 +1,3 @@
-##
-# name:      Module::Compile::Opt
-# abstract:  Provide options to Module::Compile
-# author:    Ingy döt Net <ingy@ingy.net>
-# license:   perl
-# copyright: 2006, 2011
-
 use strict; use warnings;
 package Module::Compile::Opt;
 
@@ -29,15 +22,3 @@ sub sanity_check {
 }
 
 1;
-
-=head1 SYNOPSIS
-
-    > export PERL5OPT=-MModule::Compile::Opt=-ext,p,pm
-    > perl -c lib/Foo.p
-    > cat lib/Foo.pm
-
-=head1 DESCRIPTION
-
-Module::Compile::Opt allows you to give runtime options to Module::Compile
-By default Module::Compile compiles a module in a C<.pm> file into a C<.pmc>
-file.

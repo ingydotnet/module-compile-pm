@@ -226,7 +226,11 @@ the compiler modules be prerequisites.
 
 =head1 SEE ALSO
 
-Module::Install
+=over
+
+=item * L<Module::Install>
+
+=back
 
 =head1 AUTHORS
 
