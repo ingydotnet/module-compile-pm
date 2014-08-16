@@ -5,23 +5,23 @@
 # license:   perl
 # copyright: 2006, 2011
 
+use strict; use warnings;
 package Module::Compile::Opt;
-use strict;
-use warnings;
-# use XXX;
 
-sub import {
-    my ($class, @args) = @_;
-    my $opts = $class->get_options(@args);
-    $class->sanity_check($opts);
-    require Module::Compile;
-    require Module::Compile::Ext;
-    Module::Compile::Ext->import(@{$opts->{ext}});
-
-    # put coderef into @INC
-    # Store PERL5OPT in .author
-    # In Module::Compile, complain if PERL5OPT != .author/PERL5OPT
-}
+# TODO; What is this module for?
+# sub import {
+#     my ($class, @args) = @_;
+#     my $opts = $class->get_options(@args)
+#         if $class->can('get_options');
+#     $class->sanity_check($opts);
+#     require Module::Compile;
+#     require Module::Compile::Ext;
+#     Module::Compile::Ext->import(@{$opts->{ext}});
+# 
+#     # put coderef into @INC
+#     # Store PERL5OPT in .author
+#     # In Module::Compile, complain if PERL5OPT != .author/PERL5OPT
+# }
 
 sub sanity_check {
     my $class = shift;
@@ -40,4 +40,4 @@ sub sanity_check {
 
 Module::Compile::Opt allows you to give runtime options to Module::Compile
 By default Module::Compile compiles a module in a C<.pm> file into a C<.pmc>
-file. 
+file.
