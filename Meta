@@ -1,7 +1,7 @@
 =meta: 0.0.2
 
 name: Module-Compile
-version: 0.30
+version: 0.31
 abstract: Perl Module Compilation
 homepage: https://metacpan.org/release/Module-Compile
 language: perl
@@ -27,9 +27,3 @@ requires:
 
 =zild:
   include_testbase: true
-
-=travis:
-  testbase: true
-  test:
-    requires:
-      Spiffy: 0
