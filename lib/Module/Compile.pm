@@ -5,7 +5,7 @@
 # - Build code into an AST.
 use strict; use warnings;
 package Module::Compile;
-our $VERSION = '0.32';
+our $VERSION = '0.33';
 
 use Digest::SHA1();
 
@@ -59,8 +59,8 @@ sub unimport {
 sub pmc_import {
     my ($class, @args) = @_;
 
-    # Handler modules can do C< use Module::Compile -base; >. Make
-    # them ISA Module::Compile and get the hell out of Dodge.
+    # Handler modules can do `use Module::Compile -base;`. Make them ISA
+    # Module::Compile and get the hell out of Dodge.
     $class->pmc_set_base(@args) and return;
 
     my ($module, $line) = (caller($class->pmc_caller_stack_frame))[1, 2];
@@ -108,7 +108,7 @@ sub pmc_file_caller_frame { 2 }
 sub pmc_set_base {
     my ($class, $flag) = @_;
 
-    # Handle the C<use Module::Compile -base;> command.
+    # Handle the `use Module::Compile -base;` command.
     if ($class->isa(__PACKAGE__) and defined $flag and $flag eq '-base') {
         my $descendant = (caller 1)[0];;
         no strict 'refs';
