@@ -1,16 +1,6 @@
-##
-# name:      Module::Install::PMC
-# abstract:  Support for Perl Compilation (.pmc)
-# author:    Ingy döt Net <ingy@ingy.net>
-# license:   perl
-# copyright: 2006, 2011
-# see:
-# - Module::Install
-# - Module::Compile
-
+use strict; use warnings;
 package Module::Install::PMC;
 
-use strict;
 use Module::Install::Base 1.01;
 
 use vars qw{$VERSION @ISA};

@@ -1,6 +1,6 @@
+use strict; use warnings;
 package Module::Optimize;
-use strict;
-use warnings;
+
 use Module::Compile -base;
 
 sub pmc_is_optimizer_module { 1 }
