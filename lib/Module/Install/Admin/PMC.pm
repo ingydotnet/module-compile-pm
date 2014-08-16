@@ -10,9 +10,8 @@
 
 package Module::Install::Admin::PMC;
 
-use strict;
+use strict; use warnings;
 use Module::Install::Base;
-use File::Basename ();
 
 use vars qw{$VERSION @ISA};
 BEGIN {

@@ -1,7 +1,7 @@
 =meta: 0.0.1
 
 name: Module-Compile
-version: 0.27
+version: 0.28
 abstract: Perl Module Compilation
 homepage: https://metacpan.org/release/Module-Compile
 

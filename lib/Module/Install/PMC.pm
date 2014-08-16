@@ -12,7 +12,6 @@ package Module::Install::PMC;
 
 use strict;
 use Module::Install::Base 1.01;
-use File::Basename ();
 
 use vars qw{$VERSION @ISA};
 BEGIN {
