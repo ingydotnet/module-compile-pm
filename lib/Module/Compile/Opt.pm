@@ -17,7 +17,7 @@ package Module::Compile::Opt;
 #     require Module::Compile;
 #     require Module::Compile::Ext;
 #     Module::Compile::Ext->import(@{$opts->{ext}});
-# 
+#
 #     # put coderef into @INC
 #     # Store PERL5OPT in .author
 #     # In Module::Compile, complain if PERL5OPT != .author/PERL5OPT

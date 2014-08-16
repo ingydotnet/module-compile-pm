@@ -35,15 +35,15 @@ sub pmc_optimize {
     }
 
 In F<Bar.pm>:
-  
+
     package Bar;
-    
+
     use Foo;
 
 or lexically:
 
     package Bar;
-    
+
     {
         use Foo;
         ...
