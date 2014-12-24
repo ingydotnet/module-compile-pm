@@ -1,4 +1,10 @@
 ---
+version: 0.35
+date:    
+changes:
+- Update to Zilla::Dist 0.0.179
+- Add dependency on Module::Install
+---
 version: 0.34
 date:    Sat Aug 16 16:09:53 PDT 2014
 changes:
