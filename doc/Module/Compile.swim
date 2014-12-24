@@ -171,8 +171,8 @@ methods.
 = Distribution Support
 
 Module::Install makes it terribly easy to prepare a module distribution with
-compiled .pmc files. Module::Compile installs a Module::Install::PMC plugin.
-All you need to do is add this line to your Makefile.PL:
+compiled .pmc files. See Module::Install::PMC. All you need to do is add this
+line to your Makefile.PL:
 
   pmc_support;
 
@@ -185,6 +185,7 @@ the compiler modules be prerequisites.
 = See Also
 
 * [Module::Install]
+* [Module::Install::PMC]
 
 = Authors
 
