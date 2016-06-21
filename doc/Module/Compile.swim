@@ -161,7 +161,7 @@ double quotes followed by a semicolon. Like:
 
   "f1d2d2f924e986ac86fdf7b36c94bcdf32beec15";
 
-The rationale of this is that randoms strings are usally left alone by
+The rationale of this is that randoms strings are usually left alone by
 compilers. After all the compilers have finished, the digest lines will be
 expanded again.
 
