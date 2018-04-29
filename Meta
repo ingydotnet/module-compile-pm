@@ -24,6 +24,8 @@ devel:
 requires:
   perl: 5.8.1
   Digest::SHA1: 2.13
+  Capture::Tiny: 0
+  App::Prove: 0
 
 =zild:
   include_testbase: true
