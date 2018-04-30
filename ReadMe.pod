@@ -12,7 +12,7 @@ Module::Compile - Perl Module Compilation
 
 =head1 Version
 
-This document describes L<Module::Compile> version B<0.36>.
+This document describes L<Module::Compile> version B<0.37>.
 
 =head1 Synopsis
 
