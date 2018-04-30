@@ -1,4 +1,10 @@
 ---
+version: 0.36
+date:    Sun Apr 29 17:09:53 PDT 2018
+changes:
+- Apply PR/8 @knowledgejunkie++
+- Apply PR/9 @mohawk2++
+---
 version: 0.35
 date:    Wed Dec 24 13:10:28 PST 2014
 changes:
