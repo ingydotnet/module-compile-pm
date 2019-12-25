@@ -1,4 +1,10 @@
 ---
+version: 0.38
+date:    Tue Dec 24 17:24:48 PST 2019
+changes:
+- Apply PR/11 xenu++
+- App::Prove breaks on Windows when $/ is undefined
+---
 version: 0.37
 date:    Sun Apr 29 19:31:11 PDT 2018
 changes:
